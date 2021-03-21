@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    android:layout_marginBottom="15dp"
+    app:cardCornerRadius="15dp"
+    android:backgroundTint="@color/colorRed">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:background="@color/colorRedDark">
+        <ImageView
+            android:layout_width="70dp"
+            android:id="@+id/imageView"
+            android:layout_height="70dp"
+            app:tint="@color/colorWhite"
+            android:src="@drawable/ic_user"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="App Development"
+                android:id="@+id/titleTextView"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorWhite"
+                />
+            <TextView
+                android:id="@+id/countTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Projects: 300"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:textColor="@color/colorWhite"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
